@@ -1,0 +1,15 @@
+@import "tailwindcss";
+
+ @keyframes blink-glow {
+                    0%, 100% {
+                        opacity: 1;
+                        text-shadow: 0 0 8px rgba(255,255,255,0.8);
+                    }
+                    50% {
+                        opacity: 0.3;
+                        text-shadow: 0 0 0px rgba(255,255,255,0);
+                    }
+                }
+                .blinking-text {
+                    animation: blink-glow 1.5s ease-in-out infinite;
+                }
