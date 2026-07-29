@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { ChevronDown } from 'lucide-react';
 
+
 function Header() {
     const [showMenu, setShowMenu] = useState(false);
 
@@ -10,7 +11,7 @@ function Header() {
 
     return (
         <header className='bg-black pb-3'>
-           <div className='max-w-6xl mx-auto flex items-center justify-between px-4 sm:px-6 lg:px-8 pt-2'>
+            <div className='max-w-screen-2xl mx-auto flex items-center justify-between px-4 sm:px-6 lg:px-6 pt-2'>
                 {/* Left side */}
                 <div className='flex items-center'>
                     <span>
