@@ -4,12 +4,16 @@ import { ChevronDown } from 'lucide-react';
 function Header() {
     const [showMenu, setShowMenu] = useState(false);
 
+    const HeaderMenuClick = () => {
+        setShowMenu(!showMenu)
+    }
+
     return (
-        <header className='bg-black pb-3 relative'>
-            <div className='flex items-center justify-evenly px-3 pt-2'>
+        <header className='bg-black pb-3'>
+           <div className='max-w-6xl mx-auto flex items-center justify-between px-4 sm:px-6 lg:px-8 pt-2'>
                 {/* Left side */}
-                <div className='flex'>
-                    <span className='mt-1.5'>
+                <div className='flex items-center'>
+                    <span>
                         <svg
                             className="text-[#E3A13E] blinking-text"
                             width="16"
@@ -30,7 +34,7 @@ function Header() {
                             />
                         </svg>
                     </span>
-                    <h3 className='text-white mt-1 ml-1.5 text-sm font-medium blinking-text'>
+                    <h3 className='text-white ml-1.5 text-sm font-medium blinking-text'>
                         STORE LOCATIONS
                     </h3>
                 </div>
@@ -39,7 +43,7 @@ function Header() {
                 <div className='relative'>
                     <button
                         className='flex items-center gap-1 text-white text-sm font-medium'
-                        onClick={() => setShowMenu(!showMenu)}
+                        onClick={HeaderMenuClick}
                     >
                         Settings
                         <ChevronDown size={16} className={`transition-transform ${showMenu ? 'rotate-180' : ''}`} />

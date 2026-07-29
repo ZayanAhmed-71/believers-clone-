@@ -1,10 +1,10 @@
 import React from 'react'
-import Navber from './Component/Navber'
+import Header from './Component/Header'
 
 const App = () => {
   return (
     <div>
-      <Navber />
+      <Header />
     </div>
   )
 }
