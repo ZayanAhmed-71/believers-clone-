@@ -9,21 +9,21 @@ function TopHeader({ cartCount = 0 }) {
     }
 
     return (
-        <div className='max-w-screen-2xl mx-auto flex items-center justify-between gap-6 px-4 sm:px-6 lg:px-6 pt-2'>
+        <div className='max-w-screen-2xl mx-auto flex items-center justify-between gap-6 px-4 sm:px-6 lg:px-6 pt-5'>
 
             {/* Left side - Logo */}
             <a href="/">
-                <img src="/Logo.png" alt="Logo" className="h-8 w-auto" />
+                <img src="/Logo.png" alt="Logo" className="h-18 w-63" />
             </a>
 
             {/* Middle - Search */}
-            <div className='flex-1 flex max-w-2xl'>
+            <div className='flex-1 flex max-w-5xl'>
                 <input
                     type="text"
                     value={query}
                     onChange={SearchInputChange}
                     placeholder="Search for Products..."
-                    className='w-full border border-black rounded-l-md px-4 py-2.5 text-sm focus:outline-none focus:ring-1 focus:ring-black'
+                    className='w-full border border-black rounded-l-md px-4 py-5 text-sm focus:outline-none focus:ring-1 focus:ring-black'
                 />
                 <button
                     type="button"
